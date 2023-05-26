@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="628.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaPrincipal">
+   <children>
+      <MenuBar prefWidth="430.0" VBox.vgrow="ALWAYS">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fichero">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Fichero" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#acercaDe" text="Acerca de" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Más">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Creado por Yasin Rehla" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label contentDisplay="CENTER" prefHeight="56.0" prefWidth="82.0" text="MENÚ" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="Caladea" size="30.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <Label contentDisplay="CENTER" layoutX="130.0" layoutY="36.0" prefHeight="30.0" prefWidth="272.0" text="ALQUILER DE VEHÍCULOS" textAlignment="CENTER" textFill="#ec0a0a" VBox.vgrow="ALWAYS">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="Caladea" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <ImageView fitHeight="180.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+         <image>
+            <Image url="@../fotos/principal.png" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </ImageView>
+      <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="440.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../fotos/cliente.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#listarCliente" text="Listar Clientes">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#leerCliente" text="Leer Cliente">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#buscarCliente" text="Buscar Cliente">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Blend mode="BLUE" />
+         </effect>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="445.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../fotos/coche.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#listarVehiculos" text="Listar Vehículos">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#leerVehiculo" text="Leer Vehículo">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#buscarVehiculo" text="Buscar Vehículo">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <effect>
+            <Blend mode="RED" />
+         </effect>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="440.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../fotos/alquiler.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#listarAlquileres" text="Listar Alquileres">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#leerAlquiler" text="Leer Alquiler">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#buscarAlquiler" text="Buscar Alquiler">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <effect>
+            <Blend mode="GREEN" />
+         </effect>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="112.0" text="Estadísticas">
+               <font>
+                  <Font name="Caladea" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../fotos/estadisticas.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Blend mode="MULTIPLY" />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
